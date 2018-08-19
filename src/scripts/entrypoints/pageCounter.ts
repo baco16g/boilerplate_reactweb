@@ -6,10 +6,10 @@ import adaptStoreToView from '@entrypoints/utils/adaptStoreToView'
 import renderViews from '@entrypoints/utils/renderView'
 
 import counterReducer from '@redux/counter/reducer'
-import couterView from '@views/counter/'
+import counterView from '@views/counter/'
 
 const reducer = extendsReducer([counterReducer])
 const store = configureStore(reducer, undefined, [ReduxThunk])
-const view = adaptStoreToView(store, couterView)
+const view = adaptStoreToView(store, counterView)
 
 renderViews('data-react-counter-app', view)
