@@ -4,18 +4,10 @@ This repository is boilerplate for React Web.
 
 ## Features
 
-- TypeScript with FSA
-- Webpack 4
-- React 16
-- Redux 4
-- Recompose
-- Prettier / ESLint
-- Huskey / Lint-Staged
-- commitizen
-
-## #ToDo
-
-- install styled-components
+* react@^16.7.0-alpha.2
+* react-dom@^16.7.0-alpha.2
+* styled-components@^4.1.3
+* typescript@^3.2.2
 
 ## Usage
 
