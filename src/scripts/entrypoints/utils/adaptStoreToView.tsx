@@ -1,11 +1,11 @@
+import { Model } from '@models'
+import { Store, StoreProvider } from 'easy-peasy'
 import * as React from 'react'
-import { Provider } from 'react-redux'
-import { Store } from 'redux'
 
-export default function(store: Store, View: () => JSX.Element) {
+export default function(store: Store<Model>, View: () => JSX.Element) {
   return (
-    <Provider store={store}>
+    <StoreProvider store={store}>
       <View />
-    </Provider>
+    </StoreProvider>
   )
 }

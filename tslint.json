@@ -1,24 +1,37 @@
 {
-  "rulesDirectory": ["tslint-plugin-prettier"],
-  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
   "rules": {
     "prettier": [
       true,
       {
-        "trailingComma": "none",
+        "semi": false,
         "singleQuote": true,
-        "semi": false
+        "printWidth": 120,
+        "trailingComma": "es5"
       }
     ],
-    "ordered-imports": false,
+    "no-console": false,
+    "interface-name": false,
+    "no-empty-interface": false,
+    "no-floating-promises": false,
     "object-literal-sort-keys": false,
-    "prefer-const": true,
-    "no-unused-vars": [
-      2,
-      {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
-      }
-    ]
+    "no-implicit-dependencies": [
+      true,
+      "dev",
+      ["@entrypoints", "@routers", "@views", "@models", "@utils"]
+    ],
+    "no-submodule-imports": {
+      "options": [
+        "@entrypoints", "@routers", "@views", "@models", "@utils"
+      ]
+    }
   }
 }

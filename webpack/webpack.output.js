@@ -4,5 +4,5 @@ module.exports = {
   filename: '[name].bundle.js',
   chunkFilename: '[name].bundle.js',
   path: CONFIG.JS_DEST,
-  publicPath: '/'
+  publicPath: 'assets/javascripts/'
 }

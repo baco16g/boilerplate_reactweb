@@ -1,4 +1,5 @@
 module.exports = {
+  mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
   devtool: process.env.NODE_ENV === 'development' ? 'source-map' : '',
   entry: require('./webpack.entry'),
   output: require('./webpack.output'),

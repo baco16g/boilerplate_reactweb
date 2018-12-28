@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-module.exports = function(path, extensions) {
+module.exports = function (path, extensions) {
   return fs
     .readdirSync(path)
     .filter(file => file.match(/.*\.(js|jsx|ts|tsx)$/))
