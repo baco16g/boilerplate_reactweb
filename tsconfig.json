@@ -14,18 +14,6 @@
     "noEmit": false,
     "jsx": "react",
     "typeRoots": ["typings"],
-    "baseUrl": "./src",
-    "paths": {
-      "@entrypoints/*": ["scripts/entrypoints/*"],
-      "@entrypoints": ["scripts/entrypoints"],
-      "@routers/*": ["scripts/routers/*"],
-      "@routers": ["scripts/routers"],
-      "@views/*": ["scripts/views/*"],
-      "@views": ["scripts/views"],
-      "@models/*": ["scripts/models/*"],
-      "@models": ["scripts/models"],
-      "@utils/*": ["scripts/utils/*"],
-      "@utils": ["scripts/utils"],
-    },
+    "baseUrl": "./src"
   },
 }

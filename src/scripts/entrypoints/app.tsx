@@ -1,19 +1,29 @@
-import renderViews from '@entrypoints/utils/renderView'
-import store from '@models'
-import Router from '@routers/components/Router'
-import history from '@routers/history'
-import routes from '@routers/routes'
-import { StoreProvider } from 'easy-peasy'
-import React from 'react'
-import { createGlobalStyle } from 'styled-components'
-import reset from 'styled-reset'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {hot} from 'react-hot-loader/root';
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
+import reset from 'styled-reset';
 
-const GlobalStyle = createGlobalStyle`${reset}`
+import Router from '../routers/components/Router';
+import history from '../routers/history';
+import routes from '../routers/routes';
+import {AppProvider} from '../providers';
+import {theme} from '../theme';
+import Wrapper from '../views/organisms/Wrapper';
 
-renderViews(
-  'data-react-app',
-  <StoreProvider store={store}>
+const GlobalStyle = createGlobalStyle`${reset}`;
+
+const App = hot(() => (
+  <>
     <GlobalStyle />
-    <Router routes={routes} history={history} fallback={<p>Loading...</p>} />
-  </StoreProvider>
-)
+    <ThemeProvider theme={theme}>
+      <AppProvider>
+        <Wrapper>
+          <Router routes={routes} history={history} fallback={<p>Loading...</p>} />
+        </Wrapper>
+      </AppProvider>
+    </ThemeProvider>
+  </>
+));
+
+ReactDOM.render(<App />, document.querySelector('[data-react-app]'));

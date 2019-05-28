@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "teppeis/es2019",
+    "teppeis/+typescript",
+    "teppeis/+prettier",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

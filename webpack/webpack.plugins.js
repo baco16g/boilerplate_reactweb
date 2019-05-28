@@ -1,16 +1,13 @@
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+
+const PATH = require('../config/path');
 
 module.exports = [
+  new ProgressBarPlugin(),
   new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, '../static/index.html')
+    template: path.resolve(PATH.TEMPLATE_SRC, 'index.html'),
   }),
-  new webpack.HotModuleReplacementPlugin(),
-  new webpack.NamedModulesPlugin(),
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': JSON.stringify(
-      process.env.NODE_ENV || 'development'
-    )
-  })
-]
+];

@@ -1,11 +1,28 @@
 {
+  "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false,
   },
-  "tslint.autoFixOnSave": true,
-  "tslint.ignoreDefinitionFiles": true,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "prettier.printWidth": 120,
-  "prettier.trailingComma": "es5"
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ]
 }

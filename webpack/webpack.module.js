@@ -1,13 +1,9 @@
 module.exports = {
-  rules: [{
-      test: /\.(ts|tsx)$/,
-      use: 'ts-loader',
-      exclude: /node_modules|\.d\.ts$/,
-    },
+  rules: [
     {
-      enforce: "pre",
-      test: /\.js$/,
-      loader: "source-map-loader"
-    }
-  ]
-}
+      test: /\.(ts|tsx)$/,
+      use: 'babel-loader',
+      exclude: /node_modules/,
+    },
+  ],
+};

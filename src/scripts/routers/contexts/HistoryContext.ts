@@ -1,8 +1,8 @@
-import { History } from 'history'
-import React from 'react'
+import {History} from 'history';
+import React from 'react';
 
-const HistoryContext = React.createContext<History>(null!)
-const { Provider, Consumer } = HistoryContext
+const HistoryContext = React.createContext<History>(null!);
+const {Provider, Consumer} = HistoryContext;
 
-export default HistoryContext
-export { Provider, Consumer }
+export default HistoryContext;
+export {Provider, Consumer};

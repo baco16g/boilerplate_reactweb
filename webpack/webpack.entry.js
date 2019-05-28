@@ -1,6 +1,5 @@
-const PATH = require('../config/path')
-const getEntries = require('./utils/getEntries')
-const pkg = require('../package')
-const deps = Object.keys(pkg.dependencies)
+/* eslint-disable @typescript-eslint/no-var-requires */
+const PATH = require('../config/path');
+const getEntries = require('./utils/getEntries');
 
-module.exports = getEntries(PATH.ENTRY_POINTS, {})
+module.exports = getEntries(PATH.ENTRY_POINTS, {});

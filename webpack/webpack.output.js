@@ -1,8 +1,9 @@
-const CONFIG = require('../config/path')
+/* eslint-disable @typescript-eslint/no-var-requires */
+const PATH = require('../config/path');
 
 module.exports = {
   filename: '[name].bundle.js',
   chunkFilename: '[name].bundle.js',
-  path: CONFIG.JS_DEST,
-  publicPath: 'assets/javascripts/'
-}
+  path: PATH.DEST,
+  publicPath: '/',
+};
