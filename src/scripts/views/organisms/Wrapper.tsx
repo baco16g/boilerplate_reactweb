@@ -25,7 +25,7 @@ const Wrapper = (props: {children: JSX.Element}) => {
     } else {
       Storage.saveSessionStorageByKey(state, STORAGE_KEY);
     }
-  }, [storedState && state.colorMode !== storedState.colorMode]);
+  }, [state.colorMode]);
 
   // Handlers
   const handleToggle = () => dispatch({type: 'TOGGLE_COLOR_MODE'});
