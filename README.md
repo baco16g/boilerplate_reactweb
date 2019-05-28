@@ -4,8 +4,8 @@ This repository is boilerplate for React Web.
 
 ## Features
 
-* react@^16.7.0-alpha.2
-* react-dom@^16.7.0-alpha.2
+* react@^16.8.6"
+* react-dom@^16.8.6"
 * styled-components@^4.1.3
 * typescript@^3.2.2
 
@@ -13,11 +13,11 @@ This repository is boilerplate for React Web.
 
 ```zsh
 # package install
-$ yarn
+$ npm install
 
 # develop mode
-$ yarn start
+$ npm start
 
 # publish mode
-$ yarn prod
+$ npm run build
 ```
