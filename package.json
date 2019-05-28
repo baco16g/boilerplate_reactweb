@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
     "build": "webpack --mode production --config ./webpack/webpack.config.js",
-    "docs": "cpx './dist/**/*' './docs'",
     "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix'",
     "cp": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist'",
     "precommit": "lint-staged",
