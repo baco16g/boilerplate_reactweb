@@ -20,7 +20,7 @@ const Wrapper = (props: {children: JSX.Element}) => {
   // Effects
   React.useEffect(() => {
     if (!mounted) {
-      dispatch({type: 'RESTORE', payload: storedState});
+      storedState && dispatch({type: 'RESTORE', payload: storedState});
       setMounted(true);
     } else {
       Storage.saveSessionStorageByKey(state, STORAGE_KEY);
