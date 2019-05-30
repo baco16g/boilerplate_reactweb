@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  .c5 {
+  display: inline-block;
+  padding: 0.3em 1em;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.c5:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.c1 {
+  display: inline-block;
+  background: #fff;
+  padding: 36px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.c2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 2;
+  text-align: center;
+  padding: 18px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  text-align: center;
+}
+
+.c4 > button:nth-child(n + 2) {
+  margin-left: 12px;
+}
+
+.c6 {
+  text-align: center;
+  margin-top: 24px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h1
+        class="c2"
+      >
+        Async Counter
+      </h1>
+      <p
+        class="c3"
+      >
+        0
+      </p>
+      <div
+        class="c4"
+      >
+        <button
+          class="c5"
+        >
+          ASYNC INCREMENT
+        </button>
+        <button
+          class="c5"
+        >
+          SAVE
+        </button>
+      </div>
+      <p
+        class="c6"
+      >
+        <a
+          href="/"
+        >
+          To Sync page
+        </a>
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,7 @@
 {
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
   "settings": {
     "react": {
@@ -15,6 +16,7 @@
   ],
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jest": true
   }
 }
