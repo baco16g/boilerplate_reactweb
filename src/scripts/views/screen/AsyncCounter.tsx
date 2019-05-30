@@ -2,27 +2,28 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import {CounterContext, CounterProvider, ICounterContext} from '../../providers/CounterProvider';
-import * as Storage from '../../utils/storage';
 import Link from '../../routers/components/Link';
-import Button from '../atoms/Button';
-import Card from '../organisms/Card';
+import sleep from '../../utils/sleep';
+import * as Storage from '../../utils/storage';
+import Button from '../shared/Button';
+import Card from '../shared/Card';
 
 const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
 
-const CounterContainer = () => {
+const AsyncCounterContainer = () => {
   return (
     <CounterProvider>
       <CardWrapper>
         <Card>
-          <Counter />
+          <AsyncCounter />
         </Card>
       </CardWrapper>
     </CounterProvider>
   );
 };
 
-const Counter = () => {
-  // Initialize
+const AsyncCounter = () => {
+  // Intialize
   const value = React.useContext(CounterContext);
   if (!value) return null;
   const {state, dispatch} = value;
@@ -35,7 +36,10 @@ const Counter = () => {
   }, []);
 
   // Handlers
-  const handlePress = React.useCallback(() => dispatch({type: 'INCREMENT'}), []);
+  const handlePress = React.useCallback(async () => {
+    await sleep(1000);
+    dispatch({type: 'INCREMENT'});
+  }, []);
   const handleSaveCounter = React.useCallback(
     () => Storage.saveSessionStorageByKey(state, STORAGE_KEY),
     [state]
@@ -44,14 +48,14 @@ const Counter = () => {
   // Render
   return (
     <>
-      <Title>Sync Counter</Title>
+      <Title>Async Counter</Title>
       <Count>{state.count}</Count>
       <ButtonWrapper>
-        <Button onPress={handlePress} label="INCREMENT" fontsize={18} />
+        <Button onPress={handlePress} label="ASYNC INCREMENT" fontsize={18} />
         <Button onPress={handleSaveCounter} label="SAVE" fontsize={18} />
       </ButtonWrapper>
       <Navigation>
-        <Link href="/async">To Async page</Link>
+        <Link href="/">To Sync page</Link>
       </Navigation>
     </>
   );
@@ -89,4 +93,4 @@ const Navigation = styled.p`
   margin-top: 24px;
 `;
 
-export default CounterContainer;
+export default AsyncCounterContainer;

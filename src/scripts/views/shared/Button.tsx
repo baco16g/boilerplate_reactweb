@@ -1,10 +1,10 @@
-import React, {MouseEvent} from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 interface Props {
   fontsize?: number;
   label: string;
-  onPress: (event: MouseEvent) => void;
+  onPress: (event: React.MouseEvent) => void;
 }
 
 const Button = ({label, onPress, fontsize = 12}: Props) => {
