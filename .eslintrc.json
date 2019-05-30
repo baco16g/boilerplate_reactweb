@@ -2,6 +2,11 @@
   "plugins": [
     "react"
   ],
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
   "extends": [
     "teppeis/es2019",
     "teppeis/+typescript",

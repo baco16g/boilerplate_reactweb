@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
     "build": "npm run cp:static & webpack --mode production --config ./webpack/webpack.config.js",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix'",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
     "precommit": "lint-staged",
     "del": "rimraf ./dist"
