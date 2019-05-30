@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {ColorMode} from '../types/AppTypes';
 
 export const AppContext = React.createContext<IAppContext | null>(null);

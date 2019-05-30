@@ -1,5 +1,5 @@
 import {History} from 'history';
-import React from 'react';
+import * as React from 'react';
 import {Routes} from 'universal-router';
 
 import {Provider as HistoryProvider} from '../contexts/HistoryContext';

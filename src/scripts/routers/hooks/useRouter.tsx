@@ -1,15 +1,15 @@
 import {History} from 'history';
-import React, {useEffect, useMemo, useState} from 'react';
+import * as React from 'react';
 import UniversalRouter, {Routes} from 'universal-router';
 
 import useLocation from '../hooks/useLocation';
 
 function useRouter(routes: Routes<any, {default: React.ComponentType}>, history: History<any>) {
   const location = useLocation(history);
-  const router = useMemo(() => new UniversalRouter(routes), [routes]);
-  const [Component, setComponent] = useState<any>('div');
+  const router = React.useMemo(() => new UniversalRouter(routes), [routes]);
+  const [Component, setComponent] = React.useState<any>('div');
 
-  useEffect(() => {
+  React.useEffect(() => {
     const LazyComponent = React.lazy(() => router.resolve(location.pathname));
     setComponent(() => LazyComponent);
   }, [location]);

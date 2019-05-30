@@ -1,10 +1,10 @@
-import React, {useCallback, useContext} from 'react';
+import * as React from 'react';
 
 import HistoryContext from '../contexts/HistoryContext';
 
 function Link(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
-  const history = useContext(HistoryContext);
-  const handleClick = useCallback(
+  const history = React.useContext(HistoryContext);
+  const handleClick = React.useCallback(
     (ev: React.MouseEvent<HTMLAnchorElement>) => {
       ev.preventDefault();
       history.push(props.href!);
