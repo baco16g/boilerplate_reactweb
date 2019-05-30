@@ -9,7 +9,7 @@ import history from '../routers/history';
 import routes from '../routers/routes';
 import {AppProvider} from '../providers';
 import {theme} from '../theme';
-import Wrapper from '../views/organisms/Wrapper';
+import Wrapper from '../views/shared/Wrapper';
 
 const GlobalStyle = createGlobalStyle`${reset}`;
 

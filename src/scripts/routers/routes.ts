@@ -4,11 +4,11 @@ import {Routes} from 'universal-router';
 const routes: Routes<any, {default: React.ComponentType}> = [
   {
     path: '/',
-    action: () => import('../views/pages/Counter'),
+    action: () => import('../views/screen/Counter'),
   },
   {
     path: '/async',
-    action: () => import('../views/pages/AsyncCounter'),
+    action: () => import('../views/screen/AsyncCounter'),
   },
 ];
 
