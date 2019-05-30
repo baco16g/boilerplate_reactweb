@@ -1,6 +1,6 @@
 module.exports = {
   moduleDirectories: ['node_modules', 'src'],
-  setupFiles: ['./test/jestSetup.ts'],
+  setupFiles: ['./test/jestSetup.ts', 'jest-localstorage-mock'],
   transform: {
     '^.+\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest',
   },
@@ -8,7 +8,11 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   modulePathIgnorePatterns: ['dist'],
   globals: {
-    window: {},
+    window: {
+      location: {
+        hostname: "localhost"
+      }
+    },
     'ts-jest': {
       tsConfig: 'tsconfig.json',
     },

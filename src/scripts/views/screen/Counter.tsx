@@ -7,7 +7,7 @@ import Link from '../../routers/components/Link';
 import Button from '../shared/Button';
 import Card from '../shared/Card';
 
-const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
+export const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
 
 const CounterContainer = () => {
   return (
@@ -45,7 +45,7 @@ const Counter = () => {
   return (
     <>
       <Title>Sync Counter</Title>
-      <Count>{state.count}</Count>
+      <Count>Count: {state.count}</Count>
       <ButtonWrapper>
         <Button onPress={handlePress} label="INCREMENT" fontsize={18} />
         <Button onPress={handleSaveCounter} label="SAVE" fontsize={18} />

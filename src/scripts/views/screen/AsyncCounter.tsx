@@ -8,7 +8,7 @@ import * as Storage from '../../utils/storage';
 import Button from '../shared/Button';
 import Card from '../shared/Card';
 
-const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
+export const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
 
 const AsyncCounterContainer = () => {
   return (
@@ -49,7 +49,7 @@ const AsyncCounter = () => {
   return (
     <>
       <Title>Async Counter</Title>
-      <Count>{state.count}</Count>
+      <Count>Count: {state.count}</Count>
       <ButtonWrapper>
         <Button onPress={handlePress} label="ASYNC INCREMENT" fontsize={18} />
         <Button onPress={handleSaveCounter} label="SAVE" fontsize={18} />
