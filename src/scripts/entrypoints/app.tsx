@@ -10,6 +10,7 @@ import routes from '../routers/routes';
 import {AppProvider} from '../providers';
 import {theme} from '../theme';
 import Wrapper from '../views/shared/Wrapper';
+import Loading from '../views/shared/Loading';
 
 const GlobalStyle = createGlobalStyle`${reset}`;
 
@@ -19,7 +20,7 @@ const App = hot(() => (
     <ThemeProvider theme={theme}>
       <AppProvider>
         <Wrapper>
-          <Router routes={routes} history={history} fallback={<p>Loading...</p>} />
+          <Router routes={routes} history={history} fallback={<Loading />} />
         </Wrapper>
       </AppProvider>
     </ThemeProvider>
