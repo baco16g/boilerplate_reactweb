@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
     "build": "npm run cp:static & webpack --mode production --config ./webpack/webpack.config.js",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "test": "jest",
+    "test": "jest --silent",
     "test:update-snapshot": "jest --updateSnapshot",
     "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
     "precommit": "lint-staged",
