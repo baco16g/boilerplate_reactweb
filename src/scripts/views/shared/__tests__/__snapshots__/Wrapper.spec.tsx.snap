@@ -48,6 +48,7 @@ exports[`matches snapshot 1`] = `
     >
       <button
         class="c2"
+        color="#67c5ff"
       >
         Change Color Mode!
       </button>

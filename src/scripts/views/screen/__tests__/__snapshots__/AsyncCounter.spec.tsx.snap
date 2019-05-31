@@ -92,11 +92,13 @@ exports[`matches snapshot 1`] = `
       >
         <button
           class="c5"
+          color="#67c5ff"
         >
           ASYNC INCREMENT
         </button>
         <button
           class="c5"
+          color="#67c5ff"
         >
           SAVE
         </button>
