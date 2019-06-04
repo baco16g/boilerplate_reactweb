@@ -45,7 +45,7 @@ const Counter = () => {
   return (
     <>
       <Title>Sync Counter</Title>
-      <Count>Count: {state.count}</Count>
+      <Count data-testid="count">Count: {state.count}</Count>
       <ButtonWrapper>
         <Button onPress={handlePress} label="INCREMENT" fontsize={18} />
         <Button onPress={handleSaveCounter} label="SAVE" fontsize={18} />

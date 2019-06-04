@@ -49,7 +49,7 @@ const AsyncCounter = () => {
   return (
     <>
       <Title>Async Counter</Title>
-      <Count>Count: {state.count}</Count>
+      <Count data-testid="count">Count: {state.count}</Count>
       <ButtonWrapper>
         <Button onPress={handlePress} label="ASYNC INCREMENT" fontsize={18} />
         <Button onPress={handleSaveCounter} label="SAVE" fontsize={18} />

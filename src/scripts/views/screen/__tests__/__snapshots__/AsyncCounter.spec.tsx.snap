@@ -84,6 +84,7 @@ exports[`matches snapshot 1`] = `
       </h1>
       <p
         class="c3"
+        data-testid="count"
       >
         Count: 0
       </p>

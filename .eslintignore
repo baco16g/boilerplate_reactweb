@@ -1,3 +1,4 @@
 tsconfig.json
 config/**
 webpack/**
+*.config.js
