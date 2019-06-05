@@ -37,7 +37,6 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
-    "axios": "^0.18.0",
     "babel-loader": "^8.0.6",
     "history": "^4.7.2",
     "react": "^16.8.6",
