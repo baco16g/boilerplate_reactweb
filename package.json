@@ -50,7 +50,7 @@
     "@commitlint/cli": "7.6.1",
     "@hot-loader/react-dom": "16.11.0",
     "@types/axios": "0.14.0",
-    "@types/expect-puppeteer": "3.3.1",
+    "@types/expect-puppeteer": "3.3.3",
     "@types/history": "4.7.2",
     "@types/jest": "24.0.13",
     "@types/jest-environment-puppeteer": "4.0.0",
