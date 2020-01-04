@@ -1,5 +1,5 @@
-import {History} from 'history';
-import * as React from 'react';
+import { History } from "history";
+import * as React from "react";
 
 function useLocation(history: History<any>) {
   const [location, setLocation] = React.useState(history.location);

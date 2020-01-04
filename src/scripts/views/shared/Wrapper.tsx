@@ -1,26 +1,26 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import {ColorMode} from '../../types/AppTypes';
-import * as Storage from '../../utils/storage';
-import {AppContext, IAppContext} from '../../providers';
+import { ColorMode } from "../../types/AppTypes";
+import * as Storage from "../../utils/storage";
+import { AppContext, IAppContext } from "../../providers";
 
-import Button from '../shared/Button';
+import Button from "../shared/Button";
 
 export const STORAGE_KEY = `${window.location.hostname}-app-provider`;
 
-const Wrapper = (props: {children: JSX.Element}) => {
+const Wrapper = (props: { children: JSX.Element }) => {
   // Initialize
   const value = React.useContext(AppContext);
   if (!value) return <div />;
-  const {state, dispatch} = value;
+  const { state, dispatch } = value;
   const [mounted, setMounted] = React.useState(false);
-  const storedState = Storage.loadSessionStorageByKey<IAppContext['state']>(STORAGE_KEY);
+  const storedState = Storage.loadSessionStorageByKey<IAppContext["state"]>(STORAGE_KEY);
 
   // Effects
   React.useEffect(() => {
     if (!mounted) {
-      storedState && dispatch({type: 'RESTORE', payload: storedState});
+      storedState && dispatch({ type: "RESTORE", payload: storedState });
       setMounted(true);
     } else {
       Storage.saveSessionStorageByKey(state, STORAGE_KEY);
@@ -28,7 +28,7 @@ const Wrapper = (props: {children: JSX.Element}) => {
   }, [state.colorMode]);
 
   // Handlers
-  const handleToggle = () => dispatch({type: 'TOGGLE_COLOR_MODE'});
+  const handleToggle = () => dispatch({ type: "TOGGLE_COLOR_MODE" });
 
   // Render
   return (
@@ -43,11 +43,11 @@ const Wrapper = (props: {children: JSX.Element}) => {
   );
 };
 
-const ColorModeWrapper = styled.div<{colorMode: ColorMode}>`
+const ColorModeWrapper = styled.div<{ colorMode: ColorMode }>`
   font-family: Futura;
   height: 100vh;
   background: ${props =>
-    props.colorMode === 'DARK' ? props.theme.darkBackground : props.theme.lightBackground};
+    props.colorMode === "DARK" ? props.theme.darkBackground : props.theme.lightBackground};
 `;
 
 const ColorModeChanger = styled.div`

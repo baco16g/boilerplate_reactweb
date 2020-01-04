@@ -1,12 +1,12 @@
-import * as React from 'react';
-import styled from 'styled-components';
+import * as React from "react";
+import styled from "styled-components";
 
-import {CounterContext, CounterProvider, ICounterContext} from '../../providers/CounterProvider';
-import Link from '../../routers/components/Link';
-import sleep from '../../utils/sleep';
-import * as Storage from '../../utils/storage';
-import Button from '../shared/Button';
-import Card from '../shared/Card';
+import { CounterContext, CounterProvider, ICounterContext } from "../../providers/CounterProvider";
+import Link from "../../routers/components/Link";
+import sleep from "../../utils/sleep";
+import * as Storage from "../../utils/storage";
+import Button from "../shared/Button";
+import Card from "../shared/Card";
 
 export const STORAGE_KEY = `${window.location.hostname}-counter-provider`;
 
@@ -26,19 +26,19 @@ const AsyncCounter = () => {
   // Intialize
   const value = React.useContext(CounterContext);
   if (!value) return null;
-  const {state, dispatch} = value;
+  const { state, dispatch } = value;
 
   // Effects
   React.useEffect(() => {
-    const storedState = Storage.loadSessionStorageByKey<ICounterContext['state']>(STORAGE_KEY);
+    const storedState = Storage.loadSessionStorageByKey<ICounterContext["state"]>(STORAGE_KEY);
     if (!storedState) return;
-    dispatch({type: 'RESTORE', payload: storedState});
+    dispatch({ type: "RESTORE", payload: storedState });
   }, []);
 
   // Handlers
   const handlePress = React.useCallback(async () => {
     await sleep(1000);
-    dispatch({type: 'INCREMENT'});
+    dispatch({ type: "INCREMENT" });
   }, []);
   const handleSaveCounter = React.useCallback(
     () => Storage.saveSessionStorageByKey(state, STORAGE_KEY),
