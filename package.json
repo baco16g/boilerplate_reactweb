@@ -62,7 +62,7 @@
     "acorn": "7.1.0",
     "cpx": "1.5.0",
     "eslint": "6.8.0",
-    "eslint-config-teppeis": "10.3.1",
+    "eslint-config-teppeis": "11.0.0",
     "eslint-plugin-jest": "23.3.0",
     "eslint-plugin-react": "7.17.0",
     "expect-puppeteer": "4.4.0",
