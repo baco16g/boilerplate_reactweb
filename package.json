@@ -11,7 +11,6 @@
     "e2e": "jest --config=jest.e2e.config.js",
     "test:update-snapshot": "jest --updateSnapshot",
     "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
-    "precommit": "lint-staged",
     "del": "rimraf ./dist",
     "serve": "serve ./dist -p 8888"
   },
@@ -90,5 +89,10 @@
     "webpack": "4.41.5",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
