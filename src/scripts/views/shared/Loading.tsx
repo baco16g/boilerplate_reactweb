@@ -1,10 +1,10 @@
-import * as React from 'react';
-import ReactLoading from 'react-loading';
-import styled from 'styled-components';
+import * as React from "react";
+import ReactLoading from "react-loading";
+import styled from "styled-components";
 
 const Loading = ({
-  type = 'bubbles',
-  color = '#fff',
+  type = "bubbles",
+  color = "#fff",
   delay = 1000,
   height = 64,
   width = 64,
@@ -16,7 +16,7 @@ const Loading = ({
   );
 };
 
-const LoadingWrapper = styled('div')<{
+const LoadingWrapper = styled("div")<{
   width: number;
   height: number;
 }>`
@@ -32,15 +32,15 @@ const LoadingWrapper = styled('div')<{
 
 interface Props {
   type?:
-    | 'blank'
-    | 'balls'
-    | 'bars'
-    | 'bubbles'
-    | 'cubes'
-    | 'cylon'
-    | 'spin'
-    | 'spinningBubbles'
-    | 'spokes';
+    | "blank"
+    | "balls"
+    | "bars"
+    | "bubbles"
+    | "cubes"
+    | "cylon"
+    | "spin"
+    | "spinningBubbles"
+    | "spokes";
   color?: string;
   delay?: number;
   height?: number;

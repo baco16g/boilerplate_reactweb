@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 
-import HistoryContext from '../contexts/HistoryContext';
+import HistoryContext from "../contexts/HistoryContext";
 
 function Link(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   const history = React.useContext(HistoryContext);

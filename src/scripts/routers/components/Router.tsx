@@ -1,12 +1,12 @@
-import {History} from 'history';
-import * as React from 'react';
-import {Routes} from 'universal-router';
+import { History } from "history";
+import * as React from "react";
+import { Routes } from "universal-router";
 
-import {Provider as HistoryProvider} from '../contexts/HistoryContext';
-import useRouter from '../hooks/useRouter';
+import { Provider as HistoryProvider } from "../contexts/HistoryContext";
+import useRouter from "../hooks/useRouter";
 
 export interface Props {
-  routes: Routes<any, {default: React.ComponentType}>;
+  routes: Routes<any, { default: React.ComponentType }>;
   history: History;
   fallback: NonNullable<React.ReactNode> | null;
 }

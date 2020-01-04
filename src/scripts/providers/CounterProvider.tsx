@@ -1,11 +1,11 @@
-import * as React from 'react';
-import {Count} from '../types/CounterTypes';
+import * as React from "react";
+import { Count } from "../types/CounterTypes";
 
 export const CounterContext = React.createContext<ICounterContext | null>(null);
 export const CounterConsumer = CounterContext.Consumer;
 
 interface IAction {
-  type: 'RESTORE' | 'INCREMENT';
+  type: "RESTORE" | "INCREMENT";
   payload: any;
 }
 
@@ -29,10 +29,10 @@ const initialState: IState = {
 const reducer = (state: IState, action: IAction) => {
   console.log(`[dispatch] ${action.type}`);
   switch (action.type) {
-    case 'RESTORE':
+    case "RESTORE":
       return action.payload;
-    case 'INCREMENT':
-      return {...state, count: state.count + 1};
+    case "INCREMENT":
+      return { ...state, count: state.count + 1 };
     default:
       return state;
   }
@@ -40,6 +40,6 @@ const reducer = (state: IState, action: IAction) => {
 
 export const CounterProvider = (props: IProps) => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
-  const value = {state, dispatch};
+  const value = { state, dispatch };
   return <CounterContext.Provider value={value}>{props.children}</CounterContext.Provider>;
 };

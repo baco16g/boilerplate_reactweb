@@ -3,7 +3,7 @@ module.exports = {
     headless: process.env.HEADLESS !== 'false',
   },
   server: {
-    command: "npm run build & serve ./dist -p 8888",
+    command: "npm run build & npm run serve",
     port: 8888
   }
 };
