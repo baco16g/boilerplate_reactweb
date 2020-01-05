@@ -1,9 +1,6 @@
-name: Node CI
+name: Validation for PullRequest
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
