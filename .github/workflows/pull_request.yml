@@ -1,9 +1,6 @@
-name: Validation for PullRequest and Push
+name: Validation for PullRequest
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
