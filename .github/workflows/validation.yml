@@ -1,6 +1,9 @@
-name: Validation for PullRequest
+name: Validation for marging into master branch and creating a pull request
 
 on:
+  push:
+    branches:
+      - master
   pull_request:
     branches:
       - master
