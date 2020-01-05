@@ -1,0 +1,30 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{41:function(e,t,r){"use strict";r.r(t),function(e){r.d(t,"STORAGE_KEY",(function(){return p}));var o,a=r(0),n=r(2),s=r(44),c=r(4),i=r(45),l=r(12),u=r(46);(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&o(e);var d="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default.signature:function(e){return e};const p=`${window.location.hostname}-counter-provider`,f=()=>a.createElement(s.b,null,a.createElement(h,null,a.createElement(u.a,null,a.createElement(b,null)))),b=()=>{const e=a.useContext(s.a);if(!e)return null;const{state:t,dispatch:r}=e;a.useEffect(()=>{const e=c.a(p);e&&r({type:"RESTORE",payload:e})},[]);const o=a.useCallback(()=>r({type:"INCREMENT"}),[]),n=a.useCallback(()=>c.b(t,p),[t]);return a.createElement(a.Fragment,null,a.createElement(v,null,"Sync Counter"),a.createElement(g,{"data-testid":"count"},"Count: ",t.count),a.createElement(C,null,a.createElement(l.a,{onPress:o,label:"INCREMENT",fontsize:18}),a.createElement(l.a,{onPress:n,label:"SAVE",fontsize:18})),a.createElement(w,null,a.createElement(i.a,{href:"/async"},"To Async page")))};d(b,"useContext{value}\nuseEffect{}\nuseCallback{handlePress}\nuseCallback{handleSaveCounter}");const v=n.default.h1`
+  font-size: 36px;
+  font-weight: bold;
+`,g=n.default.p`
+  font-size: 24px;
+  line-height: 2;
+  text-align: center;
+  padding: 18px 0;
+`,h=n.default.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`,C=n.default.div`
+  text-align: center;
+  > button:nth-child(n + 2) {
+    margin-left: 12px;
+  }
+`,w=n.default.p`
+  text-align: center;
+  margin-top: 24px;
+`,x=f;var L,k;t.default=x,(L="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(L.register(p,"STORAGE_KEY","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(f,"CounterContainer","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(b,"Counter","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(v,"Title","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(g,"Count","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(h,"CardWrapper","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(C,"ButtonWrapper","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(w,"Navigation","/github/workspace/src/scripts/views/screen/Counter.tsx"),L.register(x,"default","/github/workspace/src/scripts/views/screen/Counter.tsx")),(k="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&k(e)}.call(this,r(1)(e))},44:function(e,t,r){"use strict";(function(e){r.d(t,"a",(function(){return s})),r.d(t,"b",(function(){return u}));var o,a=r(0);(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&o(e);var n="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default.signature:function(e){return e};const s=a.createContext(null),c=s.Consumer,i={count:0},l=(e,t)=>{switch(console.log(`[dispatch] ${t.type}`),t.type){case"RESTORE":return t.payload;case"INCREMENT":return{...e,count:e.count+1};default:return e}},u=e=>{const[t,r]=a.useReducer(l,i),o={state:t,dispatch:r};return a.createElement(s.Provider,{value:o},e.children)};var d,p;n(u,"useReducer{[state, dispatch](initialState)}"),(d="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(d.register(s,"CounterContext","/github/workspace/src/scripts/providers/CounterProvider.tsx"),d.register(c,"CounterConsumer","/github/workspace/src/scripts/providers/CounterProvider.tsx"),d.register(i,"initialState","/github/workspace/src/scripts/providers/CounterProvider.tsx"),d.register(l,"reducer","/github/workspace/src/scripts/providers/CounterProvider.tsx"),d.register(u,"CounterProvider","/github/workspace/src/scripts/providers/CounterProvider.tsx")),(p="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&p(e)}).call(this,r(1)(e))},45:function(e,t,r){"use strict";(function(e){var o,a=r(0),n=r(11);function s(){return(s=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var o in r)Object.prototype.hasOwnProperty.call(r,o)&&(e[o]=r[o])}return e}).apply(this,arguments)}function c(e){const t=a.useContext(n.b),r=a.useCallback(r=>{r.preventDefault(),t.push(e.href)},[t,e.href]);return a.createElement("a",s({onClick:r},e))}(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&o(e),("undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default.signature:function(e){return e})(c,"useContext{history}\nuseCallback{handleClick}");const i=c;var l,u;t.a=i,(l="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(l.register(c,"Link","/github/workspace/src/scripts/routers/components/Link.tsx"),l.register(i,"default","/github/workspace/src/scripts/routers/components/Link.tsx")),(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&u(e)}).call(this,r(1)(e))},46:function(e,t,r){"use strict";(function(e){var o,a=r(0),n=r(2);(o="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.enterModule:void 0)&&o(e);"undefined"!=typeof reactHotLoaderGlobal&&reactHotLoaderGlobal.default.signature;const s=e=>a.createElement(c,null,e.children),c=n.default.div`
+  display: inline-block;
+  background: #fff;
+  padding: 36px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+`,i=s;var l,u;t.a=i,(l="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.default:void 0)&&(l.register(s,"Card","/github/workspace/src/scripts/views/shared/Card.tsx"),l.register(c,"StyledCard","/github/workspace/src/scripts/views/shared/Card.tsx"),l.register(i,"default","/github/workspace/src/scripts/views/shared/Card.tsx")),(u="undefined"!=typeof reactHotLoaderGlobal?reactHotLoaderGlobal.leaveModule:void 0)&&u(e)}).call(this,r(1)(e))}}]);
