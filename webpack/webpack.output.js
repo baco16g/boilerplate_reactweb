@@ -5,5 +5,5 @@ module.exports = {
   filename: '[name].bundle.js',
   chunkFilename: '[name].bundle.js',
   path: PATH.DEST,
-  publicPath: './',
+  publicPath: process.env.ENV === 'GITHUB_PAGES' ? '/boilerplate_reactweb' : '/',
 };
