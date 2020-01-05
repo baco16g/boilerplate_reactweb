@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
     "build": "npm run cp:static & webpack --mode production --config ./webpack/webpack.config.js",
-    "deploy:gh-pages": "cpx './dist/**/*' './docs'",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "test": "jest --silent",
     "e2e": "jest --config=jest.e2e.config.js",

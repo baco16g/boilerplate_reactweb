@@ -1,22 +1,13 @@
 import * as React from "react";
 import { Routes } from "universal-router";
 
-const publicPath = (() => {
-  switch (process.env.ENV ) {
-    case 'GITHUB_PAGES':
-      return '/boilerplate_reactweb'
-    default:
-      return ''
-  }
-})()
-
 const routes: Routes<any, { default: React.ComponentType }> = [
   {
-    path: `${publicPath}/`,
+    path: "/",
     action: () => import("../views/screen/Counter"),
   },
   {
-    path: `${publicPath}/async`,
+    path: "/async",
     action: () => import("../views/screen/AsyncCounter"),
   },
 ];
