@@ -44,7 +44,7 @@
     "react-loading": "^2.0.3",
     "styled-components": "^4.4.1",
     "styled-reset": "^4.0.9",
-    "universal-router": "^8.0.0"
+    "universal-router": "^8.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.4",
