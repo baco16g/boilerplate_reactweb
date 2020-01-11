@@ -6,11 +6,15 @@ import useLocation from "../hooks/useLocation";
 
 function useRouter(routes: Routes<any, { default: React.ComponentType }>, history: History<any>) {
   const location = useLocation(history);
-  const router = React.useMemo(() => new UniversalRouter(routes), [routes]);
+  const options = { baseUrl: process.env.BASE_URL };
+  const router = React.useMemo(() => new UniversalRouter(routes, options), [routes]);
   const [Component, setComponent] = React.useState<any>("div");
 
   React.useEffect(() => {
-    const LazyComponent = React.lazy(() => router.resolve(location.pathname));
+    const pathname = process.env.BASE_URL
+      ? location.pathname.replace(process.env.BASE_URL, "").slice(1)
+      : location.pathname;
+    const LazyComponent = React.lazy(() => router.resolve(pathname));
     setComponent(() => LazyComponent);
   }, [location]);
 
