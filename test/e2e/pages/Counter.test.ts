@@ -5,7 +5,7 @@ describe("Counter", () => {
 
   beforeAll(async () => {
     page.setViewport({ width: 1200, height: 800 });
-    await page.goto("http://localhost:8888");
+    await page.goto("http://localhost:8888/boilerplate_reactweb/");
   });
 
   it('should be Heading "Sync Counter"', async () => {
