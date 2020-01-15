@@ -10,6 +10,6 @@
           "^(?=.*styled-components).*$",
         ]
       }
-    }
+    ]
   }
 }
