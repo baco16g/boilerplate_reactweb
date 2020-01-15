@@ -1,5 +1,15 @@
 {
   "extends": [
     "@teppeis"
-  ]
+  ],
+  "npm": {
+    "packageRules": [
+      {
+        "groupName": "styled-components",
+        "packagePatterns": [
+          "^(?=.*styled-components).*$",
+        ]
+      }
+    ]
+  }
 }
