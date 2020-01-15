@@ -7,7 +7,7 @@
       {
         "groupName": "styled-components",
         "packagePatterns": [
-          "^(?=.*styled-components).*$",
+          "^(?=.*styled-components).*$"
         ]
       }
     ]
