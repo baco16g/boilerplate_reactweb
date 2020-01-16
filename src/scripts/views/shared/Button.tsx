@@ -20,7 +20,7 @@ const StyledButton = styled.button<{ fontsize: number; color: string }>`
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  font-size: ${props => `${props.fontsize}px`}
+  font-size: ${props => `${props.fontsize}px`};
   color: ${props => props.color};
   border: solid 2px ${props => props.color};
   border-radius: 3px;
