@@ -1,14 +1,10 @@
 {
-  "extends": [
-    "@teppeis"
-  ],
+  "extends": ["@teppeis"],
   "npm": {
     "packageRules": [
       {
         "groupName": "styled-components",
-        "packagePatterns": [
-          "^(?=.*styled-components).*$"
-        ]
+        "packagePatterns": ["styled-components"]
       }
     ]
   }
