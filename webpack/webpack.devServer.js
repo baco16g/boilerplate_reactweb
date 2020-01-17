@@ -10,7 +10,7 @@ module.exports = {
   hotOnly: true,
   historyApiFallback: true,
   contentBase: path.join(__dirname, '../dist'),
-  openPage: PATH.PUBLIC_PATH,
+  openPage: PATH.PUBLIC_PATH.replace(/^\//, ''),
   before: app => {
     app.use('/static', express.static(path.resolve(__dirname, '../static')));
   },
