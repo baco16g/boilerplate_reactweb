@@ -24,7 +24,7 @@ const StyledButton = styled.button<{ fontsize: number; color: string }>`
   color: ${props => props.color};
   border: solid 2px ${props => props.color};
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
   &:hover {
     background: ${props => props.color};
     color: white;
