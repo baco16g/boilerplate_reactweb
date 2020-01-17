@@ -24,8 +24,12 @@ it("The style passed in props should be applied correctly", () => {
   const { container } = render(
     <Button label="Press!!" color="#ccc" fontsize={12} onPress={onPress} />
   );
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("color", "#ccc");
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("border", "solid 2px #ccc");
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("background", "#ccc", { modifier: ":hover" });
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("font-size", "12px");
 });
