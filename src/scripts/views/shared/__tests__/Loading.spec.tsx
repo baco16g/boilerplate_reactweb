@@ -13,6 +13,8 @@ it("matches snapshot", () => {
 
 it("The style passed in props should be applied correctly", () => {
   const { container } = render(<Loading width={100} height={100} />);
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("width", "100px");
+  // @ts-ignore
   expect(container.firstChild).toHaveStyleRule("height", "100px");
 });
