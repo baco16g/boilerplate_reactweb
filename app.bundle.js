@@ -2,11 +2,11 @@
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  font-size: ${e=>`${e.fontsize}px`}
+  font-size: ${e=>`${e.fontsize}px`};
   color: ${e=>e.color};
   border: solid 2px ${e=>e.color};
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
   &:hover {
     background: ${e=>e.color};
     color: white;
