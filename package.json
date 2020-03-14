@@ -50,7 +50,7 @@
     "@commitlint/cli": "8.3.5",
     "@hot-loader/react-dom": "16.11.0",
     "@testing-library/jest-dom": "5.1.1",
-    "@testing-library/react": "9.4.1",
+    "@testing-library/react": "9.5.0",
     "@types/axios": "0.14.0",
     "@types/expect-puppeteer": "4.4.0",
     "@types/history": "4.7.5",
