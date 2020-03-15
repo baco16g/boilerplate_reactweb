@@ -10,7 +10,7 @@
     "test": "jest --silent",
     "e2e": "jest --config=jest.e2e.config.js",
     "test:update-snapshot": "jest --updateSnapshot",
-    "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
+    "cp:static": "cpy './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
     "del": "rimraf ./dist",
     "serve": "serve ./dist -p 8888"
   },
@@ -62,7 +62,7 @@
     "@types/styled-components": "5.0.1",
     "@types/universal-router": "8.0.0",
     "acorn": "7.1.1",
-    "cpx": "1.5.0",
+    "cpy-cli": "^3.1.0",
     "eslint": "6.8.0",
     "eslint-config-teppeis": "11.0.0",
     "eslint-plugin-jest": "23.8.1",
