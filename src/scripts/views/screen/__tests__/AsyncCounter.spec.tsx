@@ -26,7 +26,7 @@ describe("AsyncCounter", () => {
     await waitForDomChange({ container: count });
     const elapsedMs = new Date().getTime() - startMs;
     expect(count.textContent).toBe("Count: 1");
-    expect(elapsedMs).toBeGreaterThanOrEqual(1000);
+    expect(elapsedMs).toBeGreaterThanOrEqual(900);
     expect(elapsedMs).toBeLessThan(1100);
   });
 
