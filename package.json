@@ -43,7 +43,7 @@
     "react-dom": "16.13.0",
     "react-loading": "^2.0.3",
     "styled-components": "^5.0.1",
-    "styled-reset": "^4.1.1",
+    "styled-reset": "^4.1.2",
     "universal-router": "^9.0.1"
   },
   "devDependencies": {
