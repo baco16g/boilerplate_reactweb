@@ -84,7 +84,7 @@
     "puppeteer": "2.1.1",
     "react-hot-loader": "4.12.20",
     "serve": "11.3.0",
-    "ts-jest": "25.3.1",
+    "ts-jest": "25.4.0",
     "typescript": "3.8.3",
     "webpack": "4.42.1",
     "webpack-cli": "3.3.11",
