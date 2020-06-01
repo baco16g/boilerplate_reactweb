@@ -46,7 +46,7 @@ const Wrapper = (props: { children: JSX.Element }) => {
 const ColorModeWrapper = styled.div<{ colorMode: ColorMode }>`
   font-family: Futura;
   height: 100vh;
-  background: ${props =>
+  background: ${(props) =>
     props.colorMode === "DARK" ? props.theme.darkBackground : props.theme.lightBackground};
 `;
 

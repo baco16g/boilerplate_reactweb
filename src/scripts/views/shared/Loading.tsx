@@ -21,8 +21,8 @@ const LoadingWrapper = styled("div")<{
   height: number;
 }>`
   position: absolute;
-  width: ${props => props.width}px;
-  height: ${props => props.height}px;
+  width: ${(props) => props.width}px;
+  height: ${(props) => props.height}px;
   top: 0;
   left: 0;
   right: 0;

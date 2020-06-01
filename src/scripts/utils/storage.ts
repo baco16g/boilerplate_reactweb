@@ -31,7 +31,7 @@ export function deleteSessionStorageByKey(key: string): void {
 }
 
 export function wait(duration: number = 0): Promise<void> {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(resolve, duration);
   });
 }

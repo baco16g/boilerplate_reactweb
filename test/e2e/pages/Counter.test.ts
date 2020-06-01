@@ -10,7 +10,7 @@ describe("Counter", () => {
 
   it('should be Heading "Sync Counter"', async () => {
     await page.waitFor(1000);
-    const h1 = await page.$eval("h1", el => el.textContent);
+    const h1 = await page.$eval("h1", (el) => el.textContent);
     await expect(h1).toBe("Sync Counter");
   });
 
