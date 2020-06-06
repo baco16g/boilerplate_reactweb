@@ -82,7 +82,7 @@
     "progress-bar-webpack-plugin": "2.1.0",
     "puppeteer": "3.3.0",
     "react-hot-loader": "4.12.21",
-    "serve": "11.3.1",
+    "serve": "11.3.2",
     "ts-jest": "26.1.0",
     "typescript": "3.8.3",
     "webpack": "4.43.0",
