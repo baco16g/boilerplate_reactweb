@@ -60,7 +60,7 @@
     "@types/react-dom": "16.9.8",
     "@types/styled-components": "5.1.0",
     "@types/universal-router": "8.0.0",
-    "acorn": "7.2.0",
+    "acorn": "7.3.1",
     "cpy-cli": "^3.1.1",
     "eslint": "7.1.0",
     "eslint-config-teppeis": "11.0.2",
