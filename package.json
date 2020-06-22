@@ -48,7 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@hot-loader/react-dom": "16.13.0",
-    "@testing-library/jest-dom": "5.9.0",
+    "@testing-library/jest-dom": "5.10.1",
     "@testing-library/react": "^10.2.1",
     "@types/axios": "0.14.0",
     "@types/expect-puppeteer": "4.4.3",
