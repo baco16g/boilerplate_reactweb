@@ -80,7 +80,7 @@
     "pptr-testing-library": "0.6.0",
     "prettier": "2.0.5",
     "progress-bar-webpack-plugin": "2.1.0",
-    "puppeteer": "3.3.0",
+    "puppeteer": "4.0.1",
     "react-hot-loader": "4.12.21",
     "serve": "11.3.2",
     "ts-jest": "26.1.1",
