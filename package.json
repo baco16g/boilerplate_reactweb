@@ -46,7 +46,7 @@
     "universal-router": "^9.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
+    "@commitlint/cli": "9.0.0",
     "@hot-loader/react-dom": "16.13.0",
     "@testing-library/jest-dom": "5.10.1",
     "@testing-library/react": "^10.2.1",
